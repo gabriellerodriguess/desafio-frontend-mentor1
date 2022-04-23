@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-<link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">  
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">  
+  <script src="https://kit.fontawesome.com/41323b41f6.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
 </head>
 <body>
   <header>
-    <img src="assets/images/logo.svg">
-    <nav>
-      <a href="#">Features</a>
-      <a href="#">Company</a> 
-      <a href="#">Careers</a>
-      <a href="#">About</a> 
+    <div class="container-nav-option">
+      <img src="assets/images/logo.svg">
+      <nav class="nav-option">
+        <a class="nav-links" href="#">Features<i class="fa-solid fa-chevron-down"></i></a>
+        <a class="nav-links" href="#">Company<i class="fa-solid fa-chevron-down"></i></a> 
+        <a class="nav-links" href="#">Careers</a>
+        <a class="nav-links" href="#">About</a> 
     </nav> 
-    <nav>
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-    </nav>
+    </div>
+    <div class="container-nav-user">
+      <nav class="nav-user">
+        <a class="nav-links" href="#">Login</a>
+        <a class="nav-links" href="#">Register</a>
+      </nav>
+    </div>
   </header>
-  
-
-
 </body>
 </html>
 
