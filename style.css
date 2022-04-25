@@ -30,6 +30,7 @@ header{
     color: #747474;
     cursor: pointer;
 }
+
 .nav-links i{
     margin: 5px;
 }
@@ -45,9 +46,68 @@ header{
 .nav-user a:last-child  { 
     border: 1px solid #747474;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .nav-user a:last-child:hover{
     border: 1px solid #161616;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 10px;
+}
+
+.container-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container-text .text{
+    width: 400px;
+    margin-top: 100px;
+}
+
+.container-text h1{
+    font-size: 60px;
+    color: #161616;
+    margin-bottom: 35px;
+}
+
+.container-text p{
+    font-size: 18px;
+    text-align: justify;
+    color: #747474;
+    line-height: 1.4;
+    margin-bottom: 35px;
+}
+
+.container-text button{
+    background-color: #161616;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: ease 0.8s;
+}
+
+.container-text button:hover{
+    background-color: #fff;
+    color: #161616;
+    border: 1px solid #161616;
+}
+
+.container-text .clients img{
+    margin: 10px;
+}
+
+.container-img img{
+    width: 400px;
+    height: 550px;
 }
