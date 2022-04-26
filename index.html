@@ -15,9 +15,9 @@
       <img src="assets/images/logo.svg">
       <nav class="nav-option">
         <ul>
-          <li><a class="nav-links features" href="#">Features<i class="fa-solid fa-chevron-down"></i></a>
-            <ul class="dropdown">
-              <li class="dropdown-select default">
+          <li id="features"><a class="nav-links features" href="#">Features<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+            <ul class="dropdown drop-features">
+              <li class="dropdown-select default" id="dropdown-select-features">
                 <span class="dropdown-items"><i class="fa-solid fa-clipboard-list"></i>Todo List</span>
                 <span class="dropdown-items"><i class="fa-solid fa-calendar-day"></i>Calendar</span>
                 <span class="dropdown-items"><i class="fa-solid fa-bell"></i>Reminders</span>
@@ -25,7 +25,15 @@
               </li>
             </ul>
           </li>
-          <li><a class="nav-links" href="#">Company<i class="fa-solid fa-chevron-down"></i></a></li>
+          <li id="company"><a class="nav-links company" href="#">Company<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+            <ul class="dropdown drop-company">
+              <li class="dropdown-select default" id="dropdown-select-company">
+                <span class="dropdown-items">History</span>
+                <span class="dropdown-items">Our Team</span>
+                <span class="dropdown-items">Blog</span>
+              </li>
+            </ul>
+          </li>
           <li><a class="nav-links" href="#">Careers</a></li>
           <li><a class="nav-links" href="#">About</a></li>
         </ul>
@@ -58,8 +66,7 @@
         <img src="assets/images/image-hero-desktop.png" alt="Imagem colorida com um homem e um computador.">
       </section>
   </main> 
-  <footer>
-  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
 
