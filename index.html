@@ -11,47 +11,45 @@
 </head>
 <body>
   <header>
-    <div class="container-nav-option">
+    <div class="menu-logo">
       <img src="assets/images/logo.svg">
-      <nav class="nav-option">
-        <ul>
-          <li id="features"><a class="nav-links features" href="#">Features<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
-            <ul class="dropdown drop-features">
-              <li class="dropdown-select default" id="dropdown-select-features">
-                <span class="dropdown-items"><i class="fa-solid fa-clipboard-list"></i>Todo List</span>
-                <span class="dropdown-items"><i class="fa-solid fa-calendar-day"></i>Calendar</span>
-                <span class="dropdown-items"><i class="fa-solid fa-bell"></i>Reminders</span>
-                <span class="dropdown-items"><i class="fa-solid fa-clock"></i>Planning</span>
-              </li>
-            </ul>
-          </li>
-          <li id="company"><a class="nav-links company" href="#">Company<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
-            <ul class="dropdown drop-company">
-              <li class="dropdown-select default" id="dropdown-select-company">
-                <span class="dropdown-items">History</span>
-                <span class="dropdown-items">Our Team</span>
-                <span class="dropdown-items">Blog</span>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-links" href="#">Careers</a></li>
-          <li><a class="nav-links" href="#">About</a></li>
-        </ul>
-    </nav> 
     </div>
-    <div class="container-nav-user">
-      <nav class="nav-user">
-        <ul>
-          <li><a class="nav-links" href="#">Login</a></li>
-          <li><a class="nav-links" href="#">Register</a></li>
-        </ul>
-      </nav>
+    <div class="menu-options">
+      <ul>
+        <li id="features"><a class="nav-links features" href="#">Features<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+          <ul class="dropdown drop-features">
+            <li class="dropdown-select default" id="dropdown-select-features">
+              <span class="dropdown-items"><i class="fa-solid fa-clipboard-list"></i>Todo List</span>
+              <span class="dropdown-items"><i class="fa-solid fa-calendar-day"></i>Calendar</span>
+              <span class="dropdown-items"><i class="fa-solid fa-bell"></i>Reminders</span>
+              <span class="dropdown-items"><i class="fa-solid fa-clock"></i>Planning</span>
+            </li>
+          </ul>
+        </li>
+        <li id="company"><a class="nav-links company" href="#">Company<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+          <ul class="dropdown drop-company">
+            <li class="dropdown-select default" id="dropdown-select-company">
+              <span class="dropdown-items">History</span>
+              <span class="dropdown-items">Our Team</span>
+              <span class="dropdown-items">Blog</span>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-links" href="#">Careers</a></li>
+        <li><a class="nav-links" href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="sing-up">
+      <ul>
+        <li><a class="nav-links" href="#">Login</a></li>
+        <li><a class="nav-links" href="#">Register</a></li>
+      </ul>
     </div>
   </header>
   <main>
       <section class="container-text">
         <div class="text">
-          <h1>Make<br>remote work</h1>
+          <h1>Make remote work</h1>
           <p>Get yout team in sync, no matter your location. Streamline processes, create team rituals, and watch productivy soar.</p>
           <button>Learn More</button>
         </div>
@@ -62,11 +60,13 @@
           <img src="assets/images/client-maker.svg" alt="Logo cliente maker">
         </div>
       </section>
-      <section class="container-img">
+      <picture class="container-img">
+        <source media="(max-width: 768px)" srcset="assets/images/image-hero-mobile.png">
         <img src="assets/images/image-hero-desktop.png" alt="Imagem colorida com um homem e um computador.">
-      </section>
+      </picture>
   </main> 
   <script src="main.js"></script>
+  <script src="object.js"></script>
 </body>
 </html>
 

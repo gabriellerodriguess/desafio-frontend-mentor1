@@ -11,21 +11,24 @@ body{
 }
 
 header{
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.container-nav-option{
-    display: flex;
-    align-items: center;
-}
-
-.container-nav-option img{
+.menu-logo img{
     margin: 20px;
 }
 
-.nav-option ul{
+.menu-options{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+.menu-options ul{
     list-style: none;
     display: flex;
     align-items: center;
@@ -49,20 +52,21 @@ header{
     color: #161616;
 }
 
-.nav-user ul{
+.sing-up ul{
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     margin: 15px;
 }
 
-.nav-user ul li:last-child{
+.sing-up ul li:last-child{
     border: 2px solid #747474;
     border-radius: 10px;
     padding: 10px 5px;
 }
 
-.nav-user ul li:last-child:hover{
+.sing-up ul li:last-child:hover{
     border: 2px solid #161616;
 }
 
@@ -214,3 +218,53 @@ main{
     width: 400px;
     height: 550px;
 }
+
+/*--------Menu Mobile----------*/
+
+@media screen and (max-width: 768px){
+    header, main{
+        width: auto;
+    }
+    header{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .container-text{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .container-text .text{
+        width: auto;
+        margin: 2.5em auto;
+    }
+    
+    .container-text .text h1{
+        width: 100%;
+    }
+
+    .container-text .text p{
+        margin: 15px;
+        text-align: center;
+    }
+
+    .container-img img{
+        width: auto;
+        height: 400px;
+    }
+    .text{
+        width: auto;
+    }
+    .text h1{
+        font-size: 45px;
+        margin: 0;
+        padding: 0;
+    }
+}   
