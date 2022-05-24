@@ -100,6 +100,17 @@ header{
     margin: 15px;
 }
 
+.modal-bg{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
 .nav-links{
     margin: 20px;
 }
@@ -322,21 +333,19 @@ main{
         z-index: 100;
     }
 
+    .mobile-menu.open body{
+        background-image: linear-gradient(rgba(58, 58, 58,0.42), rgba(58, 58, 58,0.42));
+    }
+
     .menu-hamburguer{
         top: 15px;
         right: 10px;
         display: block;
     }
 
-    ul{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .menu-options{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         position: absolute;
         right: 0;
         top: 0;
@@ -345,14 +354,21 @@ main{
         width: 40vh;
         transform: translateX(100%);
         transition: .3s ease-out;
+        z-index: 10;
     }
 
-    .menu-options.show{
+    .show{
         transform: translateX(0);
+        display: block;
+        box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
+        transition:  0.4s ease-in-out;
     }
 
     .menu-options .options{
         margin: 50px 0 15px 0;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .options li:nth-child(3){
