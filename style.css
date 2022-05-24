@@ -295,6 +295,17 @@ main{
     height: 550px;
 }
 
+.copy{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.copy a{
+    color: #161616;
+    margin-left: 5px;
+}
+
 /*--------Menu Mobile----------*/
 
 @media screen and (max-width: 800px){
