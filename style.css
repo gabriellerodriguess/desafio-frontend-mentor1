@@ -18,17 +18,28 @@ header{
 }
 
 .mobile-menu{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background-color: #fff;
+}
+
+.menu-hamburguer{
+    position: absolute;
     width: 40px;
     height: 3px;
-    margin-left: 20px;
     background-color: #747474;
     border-radius: 2px;
-    display: none;
     cursor: pointer;
 }
 
-.mobile-menu::after,
-.mobile-menu::before{
+.menu-hamburguer::after,
+.menu-hamburguer::before{
     content: '';
     position: absolute;
     width: 40px;
@@ -40,11 +51,11 @@ header{
 /*---------Animation----------*/
 
 
-.mobile-menu::after{
+.menu-hamburguer::after{
     transform: translateY(-10px);
 }
 
-.mobile-menu::before{
+.menu-hamburguer::before{
     transform: translateY(10px);
 }
 
@@ -290,8 +301,14 @@ main{
     .mobile-menu{
         display: block;
         position: absolute;
-        top: 30px;
-        right: 15px;
+        top: 15px;
+        right: 10px;
+    }
+
+    .menu-hamburguer{
+        top: 15px;
+        right: 10px;
+        display: block;
     }
 
     ul{
