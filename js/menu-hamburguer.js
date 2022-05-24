@@ -1,10 +1,10 @@
 const menuHamburguer = document.querySelector('#mobile-menu')
-
 const menuOptions = document.querySelector('#menu-options')
-
+const modalBackground = document.querySelector('#modal-bg')
 
 const showMenu = () => {
     menuOptions.classList.toggle('show')
+    modalBackground.classList.toggle('show')
 }
 
 let menuOpen = false
@@ -17,10 +17,9 @@ const toggleHamburguer = () => {
         menuHamburguer.classList.remove('open')
         menuOpen = false
     }
-
 }
 
-const handleClick = () => {
+function handleClick() {
     showMenu()
     toggleHamburguer()
 }
