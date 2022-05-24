@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/41323b41f6.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
 </head>
+
 <body>
   <header>
     <div class="menu-logo">
@@ -19,7 +21,8 @@
     </div>
     <div class="menu-options" id="menu-options">
       <ul class="options">
-        <li id="features"><a class="nav-links features" href="#">Features<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+        <li id="features"><a class="nav-links features" href="#">Features<i class="fa-solid fa-chevron-down"
+              id="arrow"></i></a>
           <ul class="dropdown drop-features">
             <li class="dropdown-select default" id="dropdown-select-features">
               <span class="dropdown-items"><i class="fa-solid fa-clipboard-list"></i>Todo List</span>
@@ -29,7 +32,8 @@
             </li>
           </ul>
         </li>
-        <li id="company"><a class="nav-links company" href="#">Company<i class="fa-solid fa-chevron-down" id="arrow"></i></a>
+        <li id="company"><a class="nav-links company" href="#">Company<i class="fa-solid fa-chevron-down"
+              id="arrow"></i></a>
           <ul class="dropdown drop-company">
             <li class="dropdown-select default" id="dropdown-select-company">
               <span class="dropdown-items">History</span>
@@ -51,30 +55,33 @@
     </div>
   </header>
   <main>
-      <section class="container-text">
-        <div class="text">
-          <h1>Make remote work</h1>
-          <p>Get yout team in sync, no matter your location. Streamline processes, create team rituals, and watch productivy soar.</p>
-          <button>Learn More</button>
-        </div>
-        <div class="clients">
-          <img src="assets/images/client-databiz.svg" alt="Logo cliente databiz">
-          <img src="assets/images/client-audiophile.svg" alt="Logo cliente audiophile">
-          <img src="assets/images/client-meet.svg" alt="Logo cliente meet">
-          <img src="assets/images/client-maker.svg" alt="Logo cliente maker">
-        </div>
-      </section>
-      <picture class="container-img">
-        <source media="(max-width: 800px)" srcset="assets/images/image-hero-mobile.png">
-        <img src="assets/images/image-hero-desktop.png" alt="Imagem colorida com um homem e um computador.">
-      </picture>
-  </main> 
+    <section class="container-text">
+      <div class="text">
+        <h1>Make remote work</h1>
+        <p>Get yout team in sync, no matter your location. Streamline processes, create team rituals, and watch
+          productivy soar.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="clients">
+        <img src="assets/images/client-databiz.svg" alt="Logo cliente databiz">
+        <img src="assets/images/client-audiophile.svg" alt="Logo cliente audiophile">
+        <img src="assets/images/client-meet.svg" alt="Logo cliente meet">
+        <img src="assets/images/client-maker.svg" alt="Logo cliente maker">
+      </div>
+    </section>
+    <picture class="container-img">
+      <source media="(max-width: 800px)" srcset="assets/images/image-hero-mobile.png">
+      <img src="assets/images/image-hero-desktop.png" alt="Imagem colorida com um homem e um computador.">
+    </picture>
+  </main>
   <script src="/js/dropdown-menu.js"></script>
   <script src="js/menu-hamburguer.js"></script>
   <footer class="copy">
     <span>Copyright 2022 | Gabrielle Rodrigues</span>
     <a href="https://github.com/gabriellerodriguess" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/gabrielle-rodrigues381/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/gabrielle-rodrigues381/" target="_blank"><i
+        class="fa-brands fa-linkedin"></i></a>
   </footer>
-  </body>
+</body>
+
 </html>
